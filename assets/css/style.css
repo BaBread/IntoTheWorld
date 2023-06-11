@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 body {
     background-color: #d9dcd6;
 }
@@ -14,6 +15,7 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    min-width:1100px;
 }
 
 /* This section defines all headers */
@@ -32,6 +34,7 @@ h2 {
 h3 {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 25px;
 }
 
 h4 {
@@ -63,8 +66,12 @@ nav ul li {
 }
 
 .avatar {
-    height: 95%;
-    width: 6%;
+    height: 100%;
+    width: 100%;
+    max-width: 10rem;
+    max-height: 10rem;
+    min-width: 7rem;
+    min-height:5rem;
     margin-left:.5rem;
     margin-right: .5rem;
     border-radius: 30%;
@@ -72,5 +79,156 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #fc6b32; /* Replace with your desired color */
+    color: #fc6b32; 
   }
+
+  main {
+    display:inline-block;
+    flex-direction:row;
+    width: 100%;
+    justify-content: flex-start;
+
+  }
+/* formatting for all sections except for "Work" */
+  .main-card {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex-direction:column ;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    height: 10rem;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #131c4d;
+    
+  }
+
+  .card-title {
+    float: left;
+    margin-right: 3rem;
+    border-right: .25rem #131c4d solid;
+    width: 13%;
+    min-width: 10rem;
+}
+
+.card-content {
+    float: right;
+    margin-left: 16rem;
+    padding: 1rem;
+    background-color: #2a607c;
+    color: white;
+    border: .25rem rgb(156, 22, 22) solid;
+    width:80%;
+    min-width:800px;
+}
+/* Work has it's own classes  */
+  .work-card {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex-direction:column ;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    height: 60rem;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #131c4d;
+  }
+
+  .main-work-content {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-left: 16rem;
+    padding: 1rem;
+    width:80%;
+
+  }
+
+  .work-content {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-left: 7.5rem;
+    padding: 1rem;
+    width:80%;
+
+  }
+
+/* We use background images so that we can overlay the text on top of the image. Work contains the "main" project as a bigger card */
+.main-image-with-text {
+    position: relative;
+    background: url("../devaccess.jpg") center/cover;
+    width: 40rem; 
+    height: 40rem;
+    border:.25rem rgb(173, 85, 3) solid;
+  }
+  
+  .main-text-overlay {
+    position: absolute;
+    top: 30rem;
+    left: 0;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    background-color: rgba(17, 47, 82, 0.836);
+  }
+  
+  .main-text-overlay h3 {
+    margin: 0;
+  }
+  
+  .main-text-overlay p {
+    margin: 10px 0 0;
+  }
+
+/* These classes house the formatting for the smaller projects */
+  .image-with-text1 {
+    position: relative;
+    background: url('../prework.jpg') center/cover;
+    width: 300px; 
+    min-width:200px;
+    height: 200px;
+    border:.25rem rgb(173, 85, 3) solid
+  }
+
+  .image-with-text2 {
+    position: relative;
+    background: url('../future.jpg') center/cover;
+    width: 300px; 
+    min-width:200px;
+    height: 200px;
+    border:.25rem rgb(173, 85, 3) solid
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    padding: .5rem;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    background-color: rgba(17, 47, 82, 0.836);
+  }
+  
+  .text-overlay h2 {
+    margin: 0;
+  }
+  
+  .text-overlay p {
+    margin: 10px 0 0;
+  }
+
+/* This class hides specific text that we are using to make the background images "hyperlinks" */
+  .hidden {
+    color: transparent;
+    background-color: transparent;
+    text-decoration: none;
+
+  }
+
+
+
+
+  

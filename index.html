@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Snippet Cheatsheet</title>
+  <title>IntoTheWorld</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -14,7 +14,7 @@
         
         <h1>
             <img class=avatar src="./assets/picme.jpeg" alt="picture of me!"> </img>
-          Into The World
+          Into The World - ✨Donald Leon✨
         </h1>
         <nav>
             <ul>
@@ -34,24 +34,59 @@
         </nav>
       </header>
     <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>Hi! I am new to coding. I have worked in healthcare IT for over 10 years. Computers and games have always been a key part of my life. But I never made the dive into trying programming. Well that is all changing this year with the UNC bootcamp. This is the beginning of a new dev adventure✨</p>
+        <!-- There is a section for each title. The work section has additional divs to house each showcased project -->
+        <section id="about-me" class="main-card">
+            <h2 class="card-title">About Me</h2>
+            <p class="card-content">Hi! I am new to coding. I have worked in healthcare IT for over 10 years. Computers and games have always been a key part of my life. But I never made the dive into trying programming. Well that is all changing this year with the UNC bootcamp. This is the beginning of a new dev adventure✨</p>
         <br>
         </section>
-        <section id="work">
-            <h2>Work</h2>
-            
+        <section id="work" class="work-card">
+            <h2 class="card-title">Work</h2>
+            <div class="main-image-with-text card-content main-work-content">
+                <!-- This hidden text is to make the image hyperlinkable due to it being a background image instead of a standard img tag. I used background image to get the text overlay to show properly -->
+                <a class="hidden" href="https://babread.github.io/DevAccessibly/" target="_blank">Hidden Text----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
+                <div class="main-text-overlay">
+                    <h3><a href="https://babread.github.io/DevAccessibly/" target="_blank">DevAccessibly</a></h3>
 
+
+                </div>
+                
+            </div>
+            
+            <div class="work-content">
+            <div class="image-with-text1 work-content">
+                <!-- This hidden text is to make the image hyperlinkable due to it being a background image instead of a standard img tag. I used background image to get the text overlay to show properly -->
+                <a class="hidden" href="https://babread.github.io/prework-study-guide" target="_blank">Hidden Text----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
+                <div class="text-overlay">
+                    <h3><a href="https://babread.github.io/prework-study-guide/" target="_blank">Study Guide</a></h3>
+
+
+                </div>
+            </div>
+            <div class="image-with-text2 work-content">
+                <!-- This hidden text is to make the image hyperlinkable due to it being a background image instead of a standard img tag. I used background image to get the text overlay to show properly -->
+                <a class="hidden" href="https://github.com/BaBread?tab=repositories" target="_blank">Hidden Text----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
+                <div class="text-overlay">
+              
+                    <h3><a href="https://github.com/BaBread?tab=repositories" target="_blank">Future Best Projects</a></h3>
+
+
+                </div>
+            </div>
+            </div>
+            </div>
 
         </section>
-        <section id="contact-me">
-            <h2>Contact Me</h2>
+        <section id="contact-me" class="main-card">
+            <h2 class="card-title">Contact Me</h2>
+            <p class="card-content">Please contact me at <a href="mailto:dfleon2011@gmail.com">dfleon2011@gmail.com</a></p>
 
             
         </section>
-        <section id="resume">
-            <h2>Resume</h2>
+        <section id="resume" class="main-card">
+            <h2 class="card-title">Resume</h2>
+            <p class="card-content">Click <a href="https://docs.google.com/document/d/1fZarvrrflvpduvFj6pgmd06HbDZWf0Zy5L3iKSjboc8/edit?usp=sharing" target="_blank">here</a> to see my resume!</p>
+
 
             
         </section>
