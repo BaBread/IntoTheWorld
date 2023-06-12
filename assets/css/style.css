@@ -44,12 +44,14 @@ h4 {
 /* Section holds styles for the nav bar */
 nav {
     display:flex;
-    align-items: center;
+    align-items:center;
     flex-wrap:nowrap;
     padding-top: 15px;
+    margin-left: auto;
     margin-right: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -163,8 +165,19 @@ a {
     width: 40rem; 
     height: 40rem;
     border:.25rem rgb(173, 85, 3) solid;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(255, 0, 0, 0.3);
+    opacity: 1;
+
   }
   
+  .main-image-with-text:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: .5;
+
+
+  }
+
   .main-text-overlay {
     position: absolute;
     top: 30rem;
@@ -173,8 +186,10 @@ a {
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     background-color: rgba(17, 47, 82, 0.836);
+    
   }
   
+
   .main-text-overlay h3 {
     margin: 0;
   }
@@ -190,7 +205,9 @@ a {
     width: 300px; 
     min-width:200px;
     height: 200px;
-    border:.25rem rgb(173, 85, 3) solid
+    border:.25rem rgb(173, 85, 3) solid;
+    transition: box-shadow 0.3s ease-in-out;
+
   }
 
   .image-with-text2 {
@@ -199,9 +216,24 @@ a {
     width: 300px; 
     min-width:200px;
     height: 200px;
-    border:.25rem rgb(173, 85, 3) solid
+    border:.25rem rgb(173, 85, 3) solid;
+    transition: box-shadow 0.3s ease-in-out;
+
+  }
+
+  .image-with-text1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: .5;
+
+
   }
   
+  .image-with-text2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: .5;
+
+  }
+
   .text-overlay {
     position: absolute;
     top: 7.5rem;

@@ -1,9 +1,13 @@
 # IntoTheWorld
 Advanced CSS Challenge #2
 
-This is a starting site used to provide some biographical information on me, Donald Leon. The main content of this site is the "Work" section, which holds various projects that I have created. I will add more and more cards as my portfolio grows.
+This is a starting site used to provide some biographical information on me, Donald Leon. The main content of this site is the "Work" section, which holds various projects that I have created. I will add more and more cards as my portfolio grows. Clicking the links in the nav bar will scroll the page down to that particular section. The website is also designed to be roughly used regardless of device.
+
+Screenshot 1: ./assets/Capture_Into_TheWorld.png
 
 This project is published in GitHub pages here:
+
+https://babread.github.io/IntoTheWorld/
 
 
 License
